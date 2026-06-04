@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    
+</head>
+
+<style>
+    .botao{
+        padding: 1px; 
+        border: 2px black solid; 
+        width: 80px; 
+        text-align: center;
+        border-radius: 5px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+</style>
+<body>
+    <main>
+        <form>
+            <h1>Questionário</h1>
+            <p id="mensagemSenha"></p>
+
+            <section style="display: flex; align-items: center;">
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha">
+                <section class="botao" id="estadoSenha">mostrar</section>
+            </section>
+            <section>
+                <input type="checkbox" id="estudante" name="estudante">
+                <label for="estudante" >Sou estudante</label>
+            </section>
+
+            <section id="dadosEstudante" style="display: none;">
+                <section>
+                    <label for="curso">Curso: </label>
+                    <input type="text" id="curso" name="curso">
+                </section>
+                <section>
+                    <label for="instituicao">Instituição: </label>
+                    <input type="text" id="instituicao" name="instituicao">
+                </section>
+                <section>
+                    <label for="periodo">Período: </label>
+                        <input type="date" id="periodoInicio" name="periodo"> a
+                        <input type="date" id="periodoFim" name="periodoFim">
+                </section>
+            </section>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
