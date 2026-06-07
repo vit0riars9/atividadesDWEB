@@ -1,0 +1,256 @@
+:root{
+    --altura-header: 20vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    min-height: var(--altura-header);
+    background: linear-gradient(90deg, #e9e7d8, #e9e7d8 60%, orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: transform 1s ease;
+}
+
+#logo-img:hover{
+    transform: rotate(360deg);
+}
+
+#logo h1{
+    color: #1f2933;
+    font-style: italic;
+    font-size: 60px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    display: inline-block;
+    transition: transform .5s ease;
+}
+
+nav a:hover{
+    transform: scale(1.5);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #e7e7e6a8;
+}
+
+main section h2{
+    text-align: center;
+    color: orange;
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+
+#header-main{
+    width: calc(100% + 60px);
+    margin-top: -30px;
+    background-color: white;
+    text-align: center;
+    padding: 20px 20px 40px;
+    margin-bottom: 40px;
+}
+
+#header-main h2{
+    font-size: 60px;
+    font-weight: bold;
+    color: #1f2933;
+    margin-bottom: 25px;
+}
+
+#header-main p{
+    font-size: 18px;
+    color: #666;
+    font-style: italic;
+}
+
+#proximos-eventos{
+    width: 90%;
+    max-width: 1000px;
+}
+
+#proximos-eventos h3{
+    color: orange;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+
+#proximos-eventos > p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.evento{
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid orange;
+    transition: .3s;
+}
+
+.evento:hover{
+    background-color: orange;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+
+.evento img{
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dados-evento h4{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.evento .data,
+.evento .local{
+    font-size: 18px;
+    text-align: left;
+}
+
+main section{
+    width: 90%;
+    max-width: 750px;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+main section h2{
+    color: orange;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.2);
+}
+
+main section p{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    outline: none;
+    border-color: orange;
+    box-shadow: 0 0 5px rgba(255,165,0,.5);
+}
+
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 5px;
+}
+
+label:has(input[type="checkbox"]){
+    display: flex;
+    align-items: center;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #16212a;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+button[type="submit"]:hover{
+    background-color: yellowgreen;
+    transform: scale(1.01);
+}
+
+button[type="reset"]:hover{
+    background-color: orange;
+    transform: scale(1.01);
+}
+
+footer{
+    background-color: #16212a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
